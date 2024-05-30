@@ -7,7 +7,9 @@ export default {
 			fontFamily: {
 				inter: ['Inter Variable', 'sans-serif'],
 				old: ['New Rocker']
-			}
+			},
+
+
 		},
 	},
 	plugins: [],
