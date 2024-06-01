@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Art from "../components/Art.astro";
 import Layout from "../layouts/Layout.astro";
 import "@fontsource-variable/inter";
@@ -20,7 +21,8 @@ import "@fontsource-variable/inter";
                 El pueblo árabe nos trajo grandes mejoras en el regadío y la
                 economía. Además, introdujo los números arábigos (1,2,3,4,...).
                 Tambien trajeron inventos chinos y griegos desconocidos en
-                España, como el papel, la pólvora y astrolabio.
+                España, como el papel, la pólvora y astrolabio. También tuvieron
+                grandes filósofos como Séneca.
             </p>
         </article>
         <article class="m-8 text-center">
@@ -28,7 +30,47 @@ import "@fontsource-variable/inter";
             <div
                 class="flex md:flex-row flex-col gap-1 justify-center align-middle items-center"
             >
-                <Art title="Literatura" class="bg-blue-600" type="arabian" >La literatura andalusí</Art>
+                <Art title="Literatura" class="bg-blue-600" type="arabian">
+                    <p class="flex justify-center">
+                        En la literatura andalusí hubo grandes obras tanto en
+                        verso como en prosa. En poesía, el tema recurrente era
+                        la naturaleza. En prosa, también han habido grandes
+                        obras, siendo una de las más importante «El Collar
+                        Único» de Ibn 'Abd Rabbihi.
+                        <Image
+                            src="/img/author1.jpg"
+                            height={100}
+                            width={100}
+                            alt="Ibn 'Abd Rabbihi"
+                        />
+                    </p>
+                </Art>
+                <Art class="bg-[#d17300]" title="Arquitectura" type="arabian"
+                    ><p class="">
+                        En la arquiitectura musulmana destaca un claro estilo,
+                        el islámico. En este estilo destacan el uso de
+                        muchísimos arcos, tambien se usaban muchos los tonos
+                        rojizos. Los murales estan llenos de baldosas con
+                        motivos musulmanes. Ejemplos son La Alahmbra o La
+                        Mezquita de Córdoba
+                        <div class="flex flex-row gap-2">
+                            <Image
+                                src="/img/alhambra.jpg"
+                                alt="Alhambra"
+                                width={70}
+                                height={50}
+                                class="rounded-md"
+                            />
+                            <Image
+                                src="/img/mezquita.jpg"
+                                alt="Mezquita"
+                                width={70}
+                                height={50}
+                                class="rounded-md"
+                            />
+                        </div>
+                    </p></Art
+                >
             </div>
         </article>
     </section>
