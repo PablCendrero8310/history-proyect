@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import "@fontsource/new-rocker";
+import Art from "../components/Art.astro";
+---
+
+<Layout
+    transition:animate="slide"
+    title="Visigodos"
+    description="Descubre todo el arte y la cultura de los visgodos"
+>
+    <section class="text-center p-8">
+        <h1 class="text-5xl font-old">Visigodos</h1>
+        <p class="font-inter">
+            Fueron los visigodos el primer pueblo en asentarse en España. Fueron
+            quienes asentaron el catolicismo como religión en España. Destacaron
+            sus trabajos en orfebrería.
+        </p>
+    </section>
+    <section class="m-5 text-center">
+        <h2 class="text-3xl font-old">Cultura</h2>
+        <p class="font-inter">
+            El pueblo visigodo tenía fama de ser un poco bruto (y luego se
+            preguntan porque hay tantos reyes visigodos), aún así, la cultura no
+            decayó, lo más importante que trajeron los visigodos a España fue la
+            religión católica. Los visgodos levantaron muchas iglesias, aunque
+            muchas fueron destruidas por los musulmanes.
+        </p>
+        <figcaption class="flex flex-col justify-center items-center">
+            <Image
+                src="/img/recaredo.jpg"
+                alt="recaredo"
+                width={320}
+                height={543}
+            />
+            <figure>Rey Recaredo I. Primer rey visigodo católico</figure>
+        </figcaption>
+    </section>
+    <section class="m-5">
+        <h2 class="text-3xl font-old text-center">Arte</h2>
+
+        <article class="flex flex-row">
+            <Art title="Literatura" class="bg-blue-500"
+                >Los visgodos tuvieron grandes escritores
+            </Art>
+        </article>
+    </section>
+</Layout>

@@ -6,7 +6,8 @@ export default {
 		extend: {
 			fontFamily: {
 				inter: ['Inter Variable', 'sans-serif'],
-				old: ['New Rocker']
+				old: ['New Rocker', 'sans-serif'],
+				arabian: ['url(/fonts/Arabian.otf)']
 			},
 
 

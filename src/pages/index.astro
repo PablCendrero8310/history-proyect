@@ -7,17 +7,20 @@ import Kingdom from "../components/Kingdom.astro";
 <Layout
 	title="Cultura y arte en la Edad Media"
 	description="Informese sobre el arte y la cultura en la Edad Media"
-	background="/img/background.jpg"
 >
 	<section class="p-8">
 		<h1 class="font-bold text-5xl font-old text-center m-2">
 			Cultura y arte en la Edad Media
 		</h1>
+		<p class="font-inter text-center">
+			La Edad Media, aunque no fue una gran época para el arte y la
+			cultura, si que nos dejó un gran legado en España y Andalucía
+		</p>
 		<div class="m-5 flex justify-center">
 			<Kingdom
-				to=""
-				class="font-old text-xl"
-				background="/img/visigoth.jpg">Visigodos</Kingdom
+				to="/visigoth"
+				class="font-old bg-[url('/img/visigoth.jpg')]"
+				>Visigodos</Kingdom
 			>
 		</div>
 	</section>

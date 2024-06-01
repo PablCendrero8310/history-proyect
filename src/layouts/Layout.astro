@@ -1,11 +1,11 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 interface Props {
 	title: string;
 	description: string;
-	background: string;
 }
 
-const { title, description, background } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,8 +16,9 @@ const { title, description, background } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
-	<body class={`bg-[url('${background}')] `}>
+	<body class={`bg-[url('/img/background.jpg')] `}>
 		<slot />
 	</body>
 </html>
