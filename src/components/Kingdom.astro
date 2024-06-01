@@ -1,0 +1,14 @@
+---
+interface Props {
+	to: string;
+	background: string;
+	class?: string;
+}
+const { to, background, class: className } = Astro.props;
+---
+
+<span
+	class={`bg-[url('${background}')] w-[75%]  p-8 md:w-[25%] text-center font-bold rounded-full ${className}`}
+>
+	<a href={to}><slot /></a></span
+>

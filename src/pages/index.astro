@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "@fontsource/new-rocker";
+import Kingdom from "../components/Kingdom.astro";
 ---
 
 <Layout
@@ -8,9 +9,16 @@ import "@fontsource/new-rocker";
 	description="Informese sobre el arte y la cultura en la Edad Media"
 	background="/img/background.jpg"
 >
-	<section>
+	<section class="p-8">
 		<h1 class="font-bold text-5xl font-old text-center m-2">
 			Cultura y arte en la Edad Media
 		</h1>
+		<div class="m-5 flex justify-center">
+			<Kingdom
+				to=""
+				class="font-old text-xl"
+				background="/img/visigoth.jpg">Visigodos</Kingdom
+			>
+		</div>
 	</section>
 </Layout>
