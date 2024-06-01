@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import "@fontsource/new-rocker";
 import Art from "../components/Art.astro";
+import "@fontsource-variable/inter";
 ---
 
 <Layout
@@ -12,6 +13,7 @@ import Art from "../components/Art.astro";
 >
     <section class="text-center p-8">
         <h1 class="text-5xl font-old">Visigodos</h1>
+
         <p class="font-inter">
             Fueron los visigodos el primer pueblo en asentarse en España. Fueron
             quienes asentaron el catolicismo como religión en España. Destacaron
@@ -42,7 +44,7 @@ import Art from "../components/Art.astro";
         <article
             class="flex md:flex-row flex-col gap-1 justify-center align-middle items-center"
         >
-            <Art title="Literatura" class="bg-blue-500">
+            <Art title="Literatura" class="bg-blue-500" type="christian">
                 <p class="font-inter">
                     Los primeros libros visigodos eran una mezcla entre
                     literatura romana y la nueva literatura germánica. Pronto,
@@ -52,7 +54,7 @@ import Art from "../components/Art.astro";
                     origen de las palabras.
                 </p>
             </Art>
-            <Art title="Arquitectura" class="bg-[#d17300]">
+            <Art title="Arquitectura" class="bg-[#d17300]" type="christian">
                 <p class="font-inter items-center">
                     Los visigodos tenáin una arquitectura caracterizada por
                     bloques grandes y diseño y regular con motivos religiosos
@@ -65,7 +67,7 @@ import Art from "../components/Art.astro";
                     class="rounded-sm"
                 />
             </Art>
-            <Art title="Orfebrería" class="bg-yellow-400">
+            <Art title="Orfebrería" class="bg-yellow-400" type="christian">
                 <p class="font-inter items-center text-sm">
                     Los visigodos fueron unos grandes orfebreros. la mayoría de
                     sus trabajos de orfebrería se trantaban de crucifijos.En

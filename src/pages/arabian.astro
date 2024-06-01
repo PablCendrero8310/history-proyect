@@ -1,12 +1,35 @@
 ---
+import Art from "../components/Art.astro";
 import Layout from "../layouts/Layout.astro";
+import "@fontsource-variable/inter";
 ---
 
 <Layout
     title="Árabes"
     description="Descubra el arte y la cultura de los pueblos musulmanes"
 >
-    <section>
-        <h1 class="font-arabian">Árabes</h1>
+    <section class="text-center m-8">
+        <h1 class="font-arabian text-5xl">Árabes</h1>
+        <p>
+            El reino árabe fue uno de los más grandes de la Edad Media. Además,
+            eran famosos por ser muy cultos y sabios.
+        </p>
+        <article>
+            <h2 class="text-3xl font-arabian">Cultura</h2>
+            <p class="font-inter">
+                El pueblo árabe nos trajo grandes mejoras en el regadío y la
+                economía. Además, introdujo los números arábigos (1,2,3,4,...).
+                Tambien trajeron inventos chinos y griegos desconocidos en
+                España, como el papel, la pólvora y astrolabio.
+            </p>
+        </article>
+        <article class="m-8 text-center">
+            <h2 class="text-3xl font-arabian">Arte</h2>
+            <div
+                class="flex md:flex-row flex-col gap-1 justify-center align-middle items-center"
+            >
+                <Art title="Literatura" class="bg-blue-600" type="arabian" >La literatura andalusí</Art>
+            </div>
+        </article>
     </section>
 </Layout>
