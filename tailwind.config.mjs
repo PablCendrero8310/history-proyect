@@ -7,7 +7,7 @@ export default {
 			fontFamily: {
 				inter: ['Inter Variable', 'sans-serif'],
 				old: ['New Rocker', 'sans-serif'],
-				arabian: ['url(/fonts/Arabian.otf)']
+				arabian: ['Ramadhan Mubarok']
 			},
 
 

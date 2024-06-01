@@ -24,8 +24,7 @@ import Art from "../components/Art.astro";
             El pueblo visigodo tenía fama de ser un poco bruto (y luego se
             preguntan porque hay tantos reyes visigodos), aún así, la cultura no
             decayó, lo más importante que trajeron los visigodos a España fue la
-            religión católica. Los visgodos levantaron muchas iglesias, aunque
-            muchas fueron destruidas por los musulmanes.
+            religión católica. Los visgodos levantaron muchas iglesias.
         </p>
         <figcaption class="flex flex-col justify-center items-center">
             <Image
@@ -40,9 +39,45 @@ import Art from "../components/Art.astro";
     <section class="m-5">
         <h2 class="text-3xl font-old text-center">Arte</h2>
 
-        <article class="flex flex-row">
-            <Art title="Literatura" class="bg-blue-500"
-                >Los visgodos tuvieron grandes escritores
+        <article
+            class="flex md:flex-row flex-col gap-1 justify-center align-middle items-center"
+        >
+            <Art title="Literatura" class="bg-blue-500">
+                <p class="font-inter">
+                    Los primeros libros visigodos eran una mezcla entre
+                    literatura romana y la nueva literatura germánica. Pronto,
+                    lo escritores godos empezaron a escribir libros con su
+                    estilo. Uno de los libros más importantes de esta época
+                    fueron las Etymologiae. Un libro en el que se explicaba el
+                    origen de las palabras.
+                </p>
+            </Art>
+            <Art title="Arquitectura" class="bg-[#d17300]">
+                <p class="font-inter items-center">
+                    Los visigodos tenáin una arquitectura caracterizada por
+                    bloques grandes y diseño y regular con motivos religiosos
+                </p>
+                <Image
+                    src="/img/crunch.jpg"
+                    width={250}
+                    height={250}
+                    alt="Iglesia visgoda"
+                    class="rounded-sm"
+                />
+            </Art>
+            <Art title="Orfebrería" class="bg-yellow-400">
+                <p class="font-inter items-center text-sm">
+                    Los visigodos fueron unos grandes orfebreros. la mayoría de
+                    sus trabajos de orfebrería se trantaban de crucifijos.En
+                    Torredonjimeno se descubrió un tesoro visigodo que se
+                    trataba de varias coronas votivas.
+                </p>
+                <Image
+                    src="/img/treasure.jpg"
+                    alt="Tesoro de Torredonjimeno"
+                    width={130}
+                    height={150}
+                />
             </Art>
         </article>
     </section>

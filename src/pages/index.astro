@@ -13,14 +13,19 @@ import Kingdom from "../components/Kingdom.astro";
 			Cultura y arte en la Edad Media
 		</h1>
 		<p class="font-inter text-center">
-			La Edad Media, aunque no fue una gran época para el arte y la
-			cultura, si que nos dejó un gran legado en España y Andalucía
+			La Edad Media fue una gran época para el arte y la cultura y nos
+			dejó un gran legado en España y Andalucía
 		</p>
-		<div class="m-5 flex justify-center">
+		<div class="m-5 flex justify-center gap-2">
 			<Kingdom
 				to="/visigoth"
 				class="font-old bg-[url('/img/visigoth.jpg')]"
 				>Visigodos</Kingdom
+			>
+			<Kingdom
+				to="/arabian"
+				class="font-arabian bg-[url('/img/arabian.jpg')] text-3xl"
+				>Árabes</Kingdom
 			>
 		</div>
 	</section>
