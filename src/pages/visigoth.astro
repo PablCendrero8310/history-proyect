@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import "@fontsource/new-rocker";
 import Art from "../components/Art.astro";
@@ -30,7 +30,7 @@ import "@fontsource-variable/inter";
         </p>
         <figcaption class="flex flex-col justify-center items-center">
             <Image
-                src="/img/recaredo.jpg"
+                src="/history-project/img/recaredo.jpg"
                 alt="recaredo"
                 width={320}
                 height={543}
@@ -60,7 +60,7 @@ import "@fontsource-variable/inter";
                     bloques grandes y diseño y regular con motivos religiosos
                 </p>
                 <Image
-                    src="/img/crunch.jpg"
+                    src="/history-project/img/crunch.jpg"
                     width={250}
                     height={250}
                     alt="Iglesia visgoda"
@@ -75,7 +75,7 @@ import "@fontsource-variable/inter";
                     trataba de varias coronas votivas.
                 </p>
                 <Image
-                    src="/img/treasure.jpg"
+                    src="/history-project/img/treasure.jpg"
                     alt="Tesoro de Torredonjimeno"
                     width={130}
                     height={150}

@@ -15,11 +15,11 @@ const { title, description } = Astro.props;
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="/index.css" />
+		<link rel="stylesheet" href="history-project/index.css" />
 		<title>{title}</title>
 		<ViewTransitions />
 	</head>
-	<body class={`bg-[url('/img/background.jpg')] `}>
+	<body class={`bg-[url('history-project/img/background.jpg')] `}>
 		<slot />
 	</body>
 </html>
