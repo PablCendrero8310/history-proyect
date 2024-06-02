@@ -1,0 +1,93 @@
+---
+import Art from "../components/Art.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout
+    title="Cristianos"
+    description="Descubra todo el arte la resistencia visigoda que permanece en España"
+>
+    <section class="text-center">
+        <h1 class="text-5xl font-old">Cristianos</h1>
+        <p>
+            Los reinos cristianos se formaron a partir de una zona de la
+            península que no fue conquistada por los musulmanes. Ellos,
+            obviamente, también tenían su arte y su cultura.
+        </p>
+    </section>
+    <article class="mt-2 text-center">
+        <h2 class="font-old text-3xl">Cultura</h2>
+        <p>
+            Fue el la Edad Media donde se abrieron los primeros centros
+            culturales: los monasterios. También se empezaron a abrir las
+            primeras universidades. En esta época, solo las personas nobles
+            podían acceder al conocimiento.
+        </p>
+    </article>
+    <article class="mt-2 text-center">
+        <h2 class="font-old text-3xl">Arte</h2>
+        <p>
+            En la Edad Media se destacan dos estilos: rómanico y gótico. En la
+            literatura abundaban los cuentos y las canciones de aventuras.
+        </p>
+        <div class="flex md:flex-row flex-col m-3 justify-center gap-2">
+            <Art type="christian" title="Románico" class="bg-gray-400"
+                ><p>
+                    El estilo románico se puede ver en edificios como iglesias y
+                    destaca por:
+                    <ul class="list-disc text-left">
+                        <li>Oscuridad</li>
+                        <li>Arcos de medio punto</li>
+                        <li>Bóvedas de aristas</li>
+                        <li>Muros gruesos</li>
+                        <li>Esculturas con motivos religiosos</li>
+                    </ul>
+                    <div class="">
+                        <Image
+                            src="/img/romanic1.jpg"
+                            alt="Románico por dentro"
+                            width={150}
+                            height={150}
+                            class="float-right m-1"
+                        />
+                        <Image
+                            src="/img/romanic2.jpg"
+                            alt="Romaánico por fuera"
+                            width={150}
+                            height={150}
+                        />
+                    </div>
+                </p></Art
+            >
+            <Art type="christian" title="Gótico" class="bg-rose-400"
+                ><p>
+                    El estilo románico se puede ver en edificios como catedrales
+                    y destaca por:
+                    <ul class="list-disc text-left">
+                        <li>Luminosidad</li>
+                        <li>Arcos apuntados</li>
+                        <li>Bóvedas cruzadas</li>
+                        <li>Muros finos</li>
+                        <li>Vidrieras y estatuas con motivos religiosos</li>
+                    </ul>
+                    <div class="">
+                        <Image
+                            src="/img/gotic1.jpg"
+                            alt="Gótico por dentro"
+                            width={70}
+                            height={150}
+                            class="float-right m-1"
+                        />
+                        <Image
+                            src="/img/gotic2.jpg"
+                            alt="Romanico por fuera"
+                            width={150}
+                            height={150}
+                        />
+                    </div>
+                </p></Art
+            >
+        </div>
+    </article>
+</Layout>

@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "@fontsource/new-rocker";
 import Kingdom from "../components/Kingdom.astro";
 ---
 
@@ -18,14 +17,19 @@ import Kingdom from "../components/Kingdom.astro";
 		</p>
 		<div class="m-5 flex md:flex-row flex-col justify-center gap-2">
 			<Kingdom
-				to="visigoth"
+				to="/visigoth"
 				class="font-old bg-[url('/img/visigoth.jpg')]"
 				>Visigodos</Kingdom
 			>
 			<Kingdom
-				to="arabian"
+				to="/arabian"
 				class="font-arabian bg-[url('/img/arabian.jpg')] text-3xl"
 				>Árabes</Kingdom
+			>
+			<Kingdom
+				to="/christian"
+				class="font-old bg-[url('img/christian.jpg')]"
+				>Cristianos</Kingdom
 			>
 		</div>
 	</section>

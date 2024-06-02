@@ -1,5 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
+import "@fontsource-variable/inter";
+import "@fontsource/new-rocker";
 interface Props {
 	title: string;
 	description: string;
@@ -19,7 +21,7 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions />
 	</head>
-	<body class={`bg-[url('/img/background.jpg')] `}>
+	<body class={`bg-[url('/img/background.jpg')] font-inter`}>
 		<slot />
 	</body>
 </html>
