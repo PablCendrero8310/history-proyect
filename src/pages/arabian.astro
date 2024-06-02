@@ -3,13 +3,16 @@ import { Image } from "astro:assets";
 import Art from "../components/Art.astro";
 import Layout from "../layouts/Layout.astro";
 import "@fontsource-variable/inter";
+import Back from "../components/Back.astro";
 ---
 
 <Layout
     title="Árabes"
     description="Descubra el arte y la cultura de los pueblos musulmanes"
 >
-    <section class="text-center m-8">
+    <section class="text-center">
+        <Back />
+
         <h1 class="font-arabian text-5xl">Árabes</h1>
         <p>
             El reino árabe fue uno de los más grandes de la Edad Media. Además,
@@ -19,10 +22,10 @@ import "@fontsource-variable/inter";
             <h2 class="text-3xl font-arabian">Cultura</h2>
             <p class="font-inter">
                 El pueblo árabe nos trajo grandes mejoras en el regadío y la
-                economía. Además, introdujo los números arábigos (1,2,3,4,...).
-                Tambien trajeron inventos chinos y griegos desconocidos en
-                España, como el papel, la pólvora y astrolabio. También tuvieron
-                grandes filósofos como Séneca.
+                economía. Además, introdujo los números arábigos
+                (0,1,2,3,4,...). También trajeron inventos chinos y griegos
+                desconocidos en España, como el papel, la pólvora y astrolabio.
+                También tuvieron grandes filósofos como Séneca.
             </p>
         </article>
         <article class="m-8 text-center">
@@ -49,9 +52,9 @@ import "@fontsource-variable/inter";
                     ><p class="">
                         En la arquiitectura musulmana destaca un claro estilo,
                         el islámico. En este estilo destacan el uso de
-                        muchísimos arcos, tambien se usaban muchos los tonos
+                        muchísimos arcos, también se usaban muchos los tonos
                         rojizos. Los murales estan llenos de baldosas con
-                        motivos musulmanes. Ejemplos son La Alahmbra o La
+                        motivos musulmanes. Ejemplos son La Alhambra o La
                         Mezquita de Córdoba
                         <div class="flex flex-row gap-2">
                             <Image

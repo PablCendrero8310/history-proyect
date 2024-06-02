@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import "@fontsource/new-rocker";
 import Art from "../components/Art.astro";
 import "@fontsource-variable/inter";
+import Back from "../components/Back.astro";
 ---
 
 <Layout
@@ -11,7 +12,9 @@ import "@fontsource-variable/inter";
     title="Visigodos"
     description="Descubre todo el arte y la cultura de los visgodos"
 >
-    <section class="text-center p-8">
+    <Back />
+
+    <section class="text-center">
         <h1 class="text-5xl font-old">Visigodos</h1>
 
         <p class="font-inter">
@@ -57,7 +60,7 @@ import "@fontsource-variable/inter";
             <Art title="Arquitectura" class="bg-[#d17300]" type="christian">
                 <p class="font-inter items-center">
                     Los visigodos tenáin una arquitectura caracterizada por
-                    bloques grandes y diseño y regular con motivos religiosos
+                    bloques grandes y diseño regular con motivos religiosos
                 </p>
                 <Image
                     src="/img/crunch.jpg"
@@ -70,15 +73,15 @@ import "@fontsource-variable/inter";
             <Art title="Orfebrería" class="bg-yellow-400" type="christian">
                 <p class="font-inter items-center text-sm">
                     Los visigodos fueron unos grandes orfebreros. la mayoría de
-                    sus trabajos de orfebrería se trantaban de crucifijos.En
-                    Torredonjimeno se descubrió un tesoro visigodo que se
+                    sus trabajos de orfebrería se trataban de crucifijos. En
+                    Torredonjimeno (Jaén) se descubrió un tesoro visigodo que se
                     trataba de varias coronas votivas.
                 </p>
                 <Image
                     src="/img/treasure.jpg"
                     alt="Tesoro de Torredonjimeno"
-                    width={130}
-                    height={150}
+                    width={120}
+                    height={120}
                 />
             </Art>
         </article>

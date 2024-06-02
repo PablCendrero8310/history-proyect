@@ -2,6 +2,7 @@
 import Art from "../components/Art.astro";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
+import Back from "../components/Back.astro";
 ---
 
 <Layout
@@ -9,6 +10,8 @@ import { Image } from "astro:assets";
     description="Descubra todo el arte la resistencia visigoda que permanece en España"
 >
     <section class="text-center">
+        <Back />
+
         <h1 class="text-5xl font-old">Cristianos</h1>
         <p>
             Los reinos cristianos se formaron a partir de una zona de la
@@ -29,7 +32,8 @@ import { Image } from "astro:assets";
         <h2 class="font-old text-3xl">Arte</h2>
         <p>
             En la Edad Media se destacan dos estilos: rómanico y gótico. En la
-            literatura abundaban los cuentos y las canciones de aventuras.
+            literatura abundaban los cuentos y las canciones de aventuras, como
+            los cantares de gesta.
         </p>
         <div class="flex md:flex-row flex-col m-3 justify-center gap-2">
             <Art type="christian" title="Románico" class="bg-gray-400"
